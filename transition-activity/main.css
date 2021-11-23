@@ -6,9 +6,23 @@ body  {
 }
 
 .caption {
+  position: relative;
   width: 80%;
   margin: auto;
   overflow: hidden;
+}
+
+.caption-overlay {
+  position: absolute;
+  color: cornsilk;
+  text-align: justify;
+  transform: translateY(320%);
+  transition: transform 1.25s ease-in-out;
+  padding: 0 12.5%;
+}
+
+.caption:hover .caption-overlay {
+  transform: translatey(0);
 }
 
 img {
